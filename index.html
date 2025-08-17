@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Four Card Feature Section</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+  <style>
+    /* ===== Base Styles ===== */
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: hsl(0, 0%, 98%);
+      text-align: center;
+      padding: 2rem;
+      margin: 0;
+      color: hsl(229, 6%, 66%);
+    }
+
+    h1 {
+      font-weight: 200;
+      margin: 0.2rem 0;
+    }
+
+    h1 b {
+      font-weight: 600;
+      color: hsl(234, 12%, 34%);
+    }
+
+    p {
+      max-width: 500px;
+      margin: 1rem auto 3rem;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    /* ===== Grid Layout ===== */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    /* ===== Card ===== */
+    .card {
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      text-align: left;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h2 {
+      color: hsl(234, 12%, 34%);
+      margin: 0 0 0.5rem;
+    }
+
+    .card p {
+      margin: 0;
+      font-size: 14px;
+    }
+
+    .card img {
+      position: absolute;
+      right: 20px;
+      bottom: 20px;
+      width: 50px;
+      height: auto;
+    }
+
+    /* ===== Accent Borders ===== */
+    .supervisor { border-top: 4px solid hsl(180, 62%, 55%); }
+    .team       { border-top: 4px solid hsl(0, 78%, 62%); }
+    .karma      { border-top: 4px solid hsl(34, 97%, 64%); }
+    .calculator { border-top: 4px solid hsl(212, 86%, 64%); }
+
+    /* ===== Footer ===== */
+    footer {
+      margin-top: 3rem;
+      font-size: 11px;
+      text-align: center;
+    }
+
+    footer a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <h1>Reliable, efficient delivery</h1>
+  <h1><b>Powered by Technology</b></h1>
+  <p>
+    Our Artificial Intelligence powered tools use millions of project data points 
+    to ensure that your project is successful.
+  </p>
+
+  <!-- Cards -->
+  <div class="grid">
+    <div class="card supervisor">
+      <h2>Supervisor</h2>
+      <p>Monitors activity to identify project roadblocks</p>
+      <img src="images/icon-supervisor.svg" alt="Supervisor Icon">
+    </div>
+
+    <div class="card team">
+      <h2>Team Builder</h2>
+      <p>Scans our talent network to create the optimal team for your project</p>
+      <img src="images/icon-team-builder.svg" alt="Team Builder Icon">
+    </div>
+
+    <div class="card karma">
+      <h2>Karma</h2>
+      <p>Regularly evaluates our talent to ensure quality</p>
+      <img src="images/icon-karma.svg" alt="Karma Icon">
+    </div>
+
+    <div class="card calculator">
+      <h2>Calculator</h2>
+      <p>Uses data from past projects to provide better delivery estimates</p>
+      <img src="images/icon-calculator.svg" alt="Calculator Icon">
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </footer>
+</body>
+</html>
